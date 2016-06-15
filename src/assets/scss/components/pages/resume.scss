@@ -1,0 +1,139 @@
+.resume {
+    .white {
+        color: $white;
+    }
+    
+    .main-title {
+        margin-top: 1rem; 
+        font-size: 2rem;
+        font-weight: $global-weight-bold;
+        color: $body-font-color;
+
+        @media #{$medium-up} {
+            margin-top: 2rem; 
+            font-size: 2.5rem;
+        }
+        
+        .subhead {
+            display: inline;
+            float: right;
+            font-weight: $global-weight-light;
+            color: $medium-gray;
+        }
+    }
+    
+    h2 {
+        font-size: $global-font-size * 1.4;
+        color: $medium-gray;
+        border-bottom: 1px solid $medium-gray;
+        margin-bottom: 1rem;
+    }
+    
+    .overview {
+        
+        .featured {
+            font-weight: $global-weight-normal;
+            
+             @media #{$medium-up} {
+                font-weight: $global-weight-bold;
+             }
+        }
+    }
+    
+    .position-listing 
+    , .education-listing {
+        
+        min-height: 130px;
+
+        .logo {
+           margin-bottom: 0.75rem; 
+        }
+        
+        .organization
+        , .position
+        , .period {
+            display: block;
+            font-size: $global-font-size * 1.2;
+            line-height: $global-font-size * 1.4;
+        }
+
+        .organization {
+            font-weight: $global-weight-bold;
+        }
+        
+        .period {
+            margin-bottom: 0.5rem;
+            color: $medium-gray;
+        }
+        
+        .description {
+            max-width: 650px;
+            margin-bottom: 2rem;
+        }
+
+        
+        @media #{$medium-up} {
+        .organization
+        , .position
+        , .period {
+            display: inline-block;
+            margin-right: 1rem;
+        }
+             }
+    }
+    
+    .skill-category {
+        font-weight: $global-weight-bold;
+        font-size: $global-font-size * 1.2;
+    }
+    
+    ul.skill-list {
+        margin-left: 0;
+
+        li {
+            list-style-type: none;
+        }
+    
+        .progress {
+            display: inline-block; 
+            width: 30px; 
+            height: 10px; 
+            margin: 7px 10px 0 0;
+        }
+        
+        .progress-meter {
+            background-color: map-get($foundation-palette, traffic-green);
+            
+            &.yellow {
+            background-color: map-get($foundation-palette, traffic-yellow);
+            }
+        }
+    }
+    
+    .contact {
+        margin-bottom: 2rem;
+    }
+
+     a.more-positions-section {
+         
+     }
+     
+    
+    .pdflink {
+        display:inline;
+        float:right;
+        background-color:#eee;
+        border:1px solid;
+        border-color:#f3f3f3 #bbb #bbb #f3f3f3;
+        margin:0;
+        padding:0.5em;
+    }
+    
+    .pdflink a {
+        font-size:1.2em;
+    }
+}
+
+ ul.jumpstart-management-slides {
+     min-height: 345px;
+ }

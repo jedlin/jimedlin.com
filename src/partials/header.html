@@ -1,0 +1,13 @@
+<header>
+    <div class="row">
+        <div class="small-12 columns site-title"">
+            {{#ifpage 'index'}}
+                 Jim Edlin's Website
+            {{/ifpage}}
+            {{#unlesspage 'index'}}
+                <a href="{{root}}index.html">Jim Edlin's Website</a>
+            {{/unlesspage}}
+        </div>
+    </div>
+</header>
+

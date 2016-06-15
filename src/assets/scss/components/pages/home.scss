@@ -1,0 +1,44 @@
+.home-page {
+    
+    .main-title {
+        margin-top: 1.5rem; 
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: $medium-gray;
+        
+        @media #{$medium-up} {
+            margin-top: 2.5rem; 
+        }
+    }
+    
+    div.subhead {
+        display: block;
+        margin-top: -0.5rem;
+        font-size: 1.5rem;
+        font-weight: $global-weight-light;
+        color: $body-font-color;
+        
+        @media #{$medium-up} {
+            display: inline;
+        }
+    }
+    
+    img.jim-headshot {
+        margin-top: 4.1rem; 
+    }
+    
+    img.jim-headshot-small {
+        margin-bottom: 2rem; 
+    }
+
+    
+    .featured {
+        font-size: 1.25rem;
+        line-height: 1.35 rem;
+        
+        @media #{$medium-up}{
+            font-size: 1.5rem;
+            line-height: 1.6 rem;
+        }
+    }
+}

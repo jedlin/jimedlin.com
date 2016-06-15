@@ -1,0 +1,14 @@
+<nav class="menu-bar">
+    <div class="row">
+        <div class="small-12 columns site-menu">
+            <div class="menu-item">
+                {{#ifpage 'resume'}}
+                     <span class="active">Résumé</span>
+                {{/ifpage}}
+                {{#unlesspage 'resume'}}
+                    <a href="{{root}}resume.html">Résumé</a>
+                {{/unlesspage}}
+            </div>
+        </div>
+    </div>
+</nav>

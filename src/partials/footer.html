@@ -1,0 +1,14 @@
+<footer>
+    <div class=row>
+        <div class="small-12 large-4 columns question-link">Questions or comments:<a href="mailto:jim@jimedlin.com">jim@jimedlin.com</a></div>
+        <div class="small-12 large-4 columns colophon">
+            {{#ifpage 'colophon'}}
+                  <strong>Colophon</strong>
+            {{/ifpage}}
+             {{#unlesspage 'colophon'}}
+                <a href="{{root}}colophon.html">Colophon</a>
+            {{/unlesspage}}
+          </div> 
+        <div class="small-12 large-4 columns copyright-notice">© 2001-{{current-year}} Jim Edlin</div>
+    </div>
+</footer>

@@ -1,0 +1,98 @@
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#main {
+    overflow:auto;
+    padding-bottom: 72px;
+
+    @media #{$large-up} {
+        padding-bottom: 34px;
+    }
+} 
+
+header {
+    background-color: map-get($foundation-palette, tertiary);
+    border-top: 2px solid map-get($foundation-palette, primary);
+    border-bottom: 1px solid map-get($foundation-palette, primary);
+    padding: 6px 0;
+    
+    .site-title a {
+        color: $body-font-color;
+        
+        &:hover {
+            color: map-get($foundation-palette, primary);
+        }
+    }
+}
+
+nav.menu-bar {
+       border-bottom: 1px solid map-get($foundation-palette, primary);
+       padding: 4px 0;
+       text-align: right;
+
+       .menu-item {
+            font-size: $small-font-size;
+            text-transform: uppercase;
+            
+            .active{
+                background-color: map-get($foundation-palette, accent);
+                border: 2px solid map-get($foundation-palette, accent);
+           } 
+       }
+       
+    a {
+        color: $body-font-color;
+        
+        &:hover {
+            color: map-get($foundation-palette, primary);
+        }
+    }
+}
+
+footer {
+    position: relative;
+    margin-top: -72px;
+    height: 72px;
+    clear:both;
+    
+    background-color: map-get($foundation-palette, tertiary);
+    border-top: 1px solid map-get($foundation-palette, primary);
+    border-bottom: 2px solid map-get($foundation-palette, primary);
+    padding: 6px 0;
+    font-size: $small-font-size;
+    
+    .question-link
+    , .colophon
+    , .copyright-notice {
+        text-align: center;
+    }
+    
+    @media #{$large-up} {
+        margin-top: -34px;
+        height: 34px;
+         .question-link {text-align: left;}
+         .copyright-notice {text-align: right;}
+    }
+}
+
+// conditional line break
+br.so {
+    display: none;
+    
+    @media #{$small-only} {
+        display: inline;
+    }
+}
+
+// featured text
+.featured {
+    font-weight: $global-weight-bold;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    
+    @media #{$medium-up} {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+}
